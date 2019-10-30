@@ -1,0 +1,7 @@
+{
+  "type": "listform",
+  "name": "Vertical Cards",
+  "fields": {
+    "count": 4
+  }
+}
