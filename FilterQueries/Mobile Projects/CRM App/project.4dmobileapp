@@ -56,12 +56,7 @@
 				"label": "CRM",
 				"shortLabel": "CRM",
 				"primaryKey": "ID",
-				"embedded": true,
-				"filter": {
-					"string": "Status = 'In Progress' & manager.Email = :email ",
-					"validated": true,
-					"parameters": true
-				}
+				"embedded": true
 			},
 			"2": {
 				"fieldNumber": 2,

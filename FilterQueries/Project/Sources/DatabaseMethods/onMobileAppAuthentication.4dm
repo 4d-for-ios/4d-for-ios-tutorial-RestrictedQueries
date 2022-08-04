@@ -23,6 +23,4 @@ Else
 	$response.statusText:="Sorry, you are not authorized to use this application."
 End if 
 
-$response.userInfo:=New object:C1471("email"; $request.email)
-
 $0:=$response
