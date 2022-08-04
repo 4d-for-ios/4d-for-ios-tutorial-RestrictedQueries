@@ -1,0 +1,48 @@
+#--------------------------------
+# Ignore invisible files/folders
+#--------------------------------
+.*
+!.git*
+.git/
+
+#--------------------------------
+# Ignore data file
+#--------------------------------
+**/MobileApps/
+*.journal
+*.4DIndx
+*.Match
+*.dataSet/
+
+#--------------------------------
+# Ignore derived data
+#--------------------------------
+**/Project/DerivedData/
+* - Mobile/
+WebFolder/
+
+#--------------------------------
+# Ignore logs
+#--------------------------------
+Logs/
+
+#--------------------------------
+# Ignore settings & preferences
+#--------------------------------
+userPreferences.*/
+Settings/
+#!buildApp.4DSettings
+
+#--------------------------------
+# Miscellaneous
+#--------------------------------
+*__Orphan__*
+*symbols.txt
+ehthumbs.db
+Thumbs.db
+
+#--------------------------------
+# Added by user
+#--------------------------------
+Resources/php.ini
+Project/Trash/

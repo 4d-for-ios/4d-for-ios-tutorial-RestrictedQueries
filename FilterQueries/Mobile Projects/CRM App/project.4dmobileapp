@@ -1,0 +1,294 @@
+{
+	"info": {
+		"version": 8,
+		"target": [
+			"iOS",
+			"android"
+		],
+		"ideVersion": "1970",
+		"ideBuildVersion": "281561",
+		"componentBuild": 281561
+	},
+	"product": {
+		"name": "CRM App",
+		"version": "1.0",
+		"copyright": "©2022 All rights reserved",
+		"bundleIdentifier": "com.myCompany.CRM-App"
+	},
+	"organization": {
+		"name": "My Company",
+		"teamId": "BSE3R8CQZT",
+		"id": "com.myCompany",
+		"identifier": "com.myCompany.CrmApp"
+	},
+	"developer": {
+		"name": "Vanessa Talbot",
+		"id": ""
+	},
+	"server": {
+		"urls": {
+			"production": ""
+		},
+		"authentication": {
+			"email": true
+		}
+	},
+	"main": {
+		"navigationTitle": "My App",
+		"navigationType": "tabbar",
+		"order": [
+			"1"
+		]
+	},
+	"dataSource": {
+		"source": "local",
+		"doNotGenerateDataAtEachBuild": false,
+		"doNotExportImages": false
+	},
+	"ui": {
+		"navigationTransition": "PresentSlideSegue",
+		"dominantColor": "rgb(0,150,158)"
+	},
+	"dataModel": {
+		"1": {
+			"": {
+				"name": "CRM",
+				"label": "CRM",
+				"shortLabel": "CRM",
+				"primaryKey": "ID",
+				"embedded": true,
+				"filter": {
+					"string": "Status = 'In Progress' & manager.Email = :email ",
+					"validated": true,
+					"parameters": true
+				}
+			},
+			"2": {
+				"fieldNumber": 2,
+				"name": "AccountManager",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Account Manager",
+				"shortLabel": "Account Manager",
+				"valueType": "string",
+				"type": 10
+			},
+			"3": {
+				"fieldNumber": 3,
+				"name": "AccountManagerID",
+				"kind": "storage",
+				"fieldType": 9,
+				"label": "Account Manager id",
+				"shortLabel": "Account Manager id",
+				"valueType": "number",
+				"type": 4
+			},
+			"10": {
+				"fieldNumber": 10,
+				"name": "AccountManagerProfilePicture",
+				"kind": "storage",
+				"fieldType": 3,
+				"label": "Account Manager Profile Picture",
+				"shortLabel": "Account Manager Profile Picture",
+				"valueType": "image",
+				"type": 12
+			},
+			"4": {
+				"fieldNumber": 4,
+				"name": "AccountName",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Account Name",
+				"shortLabel": "Account Name",
+				"valueType": "string",
+				"type": 10
+			},
+			"11": {
+				"fieldNumber": 11,
+				"name": "AccountProfilePicture",
+				"kind": "storage",
+				"fieldType": 3,
+				"label": "Account Profile Picture",
+				"shortLabel": "Account Profile Picture",
+				"valueType": "image",
+				"type": 12
+			},
+			"13": {
+				"fieldNumber": 13,
+				"name": "Amount_due",
+				"kind": "storage",
+				"fieldType": 1,
+				"label": "Amount due",
+				"shortLabel": "Amount due",
+				"valueType": "number",
+				"type": 6,
+				"icon": "/amountDue.png"
+			},
+			"9": {
+				"fieldNumber": 9,
+				"name": "Country",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Country",
+				"shortLabel": "Country",
+				"valueType": "string",
+				"type": 10,
+				"icon": "/countryIcon.png"
+			},
+			"5": {
+				"fieldNumber": 5,
+				"name": "CreationDate",
+				"kind": "storage",
+				"fieldType": 4,
+				"label": "Creation Date",
+				"shortLabel": "Creation Date",
+				"valueType": "date",
+				"type": 8,
+				"icon": "/creationDate.png"
+			},
+			"6": {
+				"fieldNumber": 6,
+				"name": "DueDate",
+				"kind": "storage",
+				"fieldType": 4,
+				"label": "Due Date",
+				"shortLabel": "Due Date",
+				"valueType": "date",
+				"type": 8,
+				"icon": "/creationDate.png"
+			},
+			"1": {
+				"fieldNumber": 1,
+				"name": "ID",
+				"kind": "storage",
+				"fieldType": 9,
+				"label": "ID",
+				"shortLabel": "ID",
+				"valueType": "number",
+				"type": 4
+			},
+			"7": {
+				"fieldNumber": 7,
+				"name": "Status",
+				"kind": "storage",
+				"fieldType": 0,
+				"label": "Status",
+				"shortLabel": "Status",
+				"valueType": "string",
+				"type": 10,
+				"icon": "/dueDate.png"
+			}
+		}
+	},
+	"list": {
+		"1": {
+			"form": "Vertical Cards",
+			"fields": [
+				{
+					"fieldNumber": 11,
+					"name": "AccountProfilePicture",
+					"kind": "storage",
+					"fieldType": 3,
+					"path": "AccountProfilePicture"
+				},
+				{
+					"fieldNumber": 2,
+					"name": "AccountManager",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "AccountManager"
+				},
+				{
+					"fieldNumber": 7,
+					"name": "Status",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Status",
+					"label": "Status",
+					"shortLabel": "Status",
+					"icon": "/dueDate.png"
+				},
+				null
+			]
+		}
+	},
+	"detail": {
+		"1": {
+			"form": "Left Cut Header",
+			"fields": [
+				{
+					"fieldNumber": 11,
+					"name": "AccountProfilePicture",
+					"kind": "storage",
+					"fieldType": 3,
+					"path": "AccountProfilePicture"
+				},
+				{
+					"fieldNumber": 2,
+					"name": "AccountManager",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "AccountManager"
+				},
+				{
+					"fieldNumber": 4,
+					"name": "AccountName",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "AccountName"
+				},
+				{
+					"fieldNumber": 9,
+					"name": "Country",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Country",
+					"label": "Country",
+					"shortLabel": "Country",
+					"icon": "/countryIcon.png"
+				},
+				{
+					"fieldNumber": 5,
+					"name": "CreationDate",
+					"kind": "storage",
+					"fieldType": 4,
+					"path": "CreationDate",
+					"label": "Creation Date",
+					"shortLabel": "Creation Date",
+					"icon": "/creationDate.png"
+				},
+				{
+					"fieldNumber": 6,
+					"name": "DueDate",
+					"kind": "storage",
+					"fieldType": 4,
+					"path": "DueDate",
+					"label": "Due Date",
+					"shortLabel": "Due Date",
+					"icon": "/creationDate.png"
+				},
+				{
+					"fieldNumber": 13,
+					"name": "Amount_due",
+					"kind": "storage",
+					"fieldType": 1,
+					"path": "Amount_due",
+					"label": "Amount due",
+					"shortLabel": "Amount due",
+					"icon": "/amountDue.png"
+				},
+				{
+					"fieldNumber": 7,
+					"name": "Status",
+					"kind": "storage",
+					"fieldType": 0,
+					"path": "Status",
+					"label": "Status",
+					"shortLabel": "Status",
+					"icon": "/dueDate.png"
+				}
+			]
+		}
+	},
+	"deepLinking": {}
+}

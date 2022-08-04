@@ -1,0 +1,44 @@
+{
+	"info": {
+		"version": 7,
+		"target": [
+			"iOS",
+			"android"
+		],
+		"ideVersion": "1970",
+		"ideBuildVersion": "281561",
+		"componentBuild": "281561"
+	},
+	"product": {
+		"name": "My App",
+		"version": "1.0",
+		"copyright": "©2022 All rights reserved",
+		"bundleIdentifier": "com.myCompany.My-App"
+	},
+	"organization": {
+		"name": "My Company",
+		"teamId": "",
+		"id": "com.myCompany"
+	},
+	"developer": {
+		"name": "Vanessa Talbot",
+		"id": ""
+	},
+	"server": {
+		"urls": {
+			"production": ""
+		}
+	},
+	"main": {
+		"navigationTitle": "My App",
+		"navigationType": "tabbar"
+	},
+	"dataSource": {
+		"source": "local",
+		"doNotGenerateDataAtEachBuild": false,
+		"doNotExportImages": false
+	},
+	"ui": {
+		"navigationTransition": "PresentSlideSegue"
+	}
+}

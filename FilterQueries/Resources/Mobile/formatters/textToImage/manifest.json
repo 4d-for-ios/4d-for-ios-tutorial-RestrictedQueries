@@ -1,0 +1,14 @@
+{
+   "name": "textToImage",
+   "type": ["text"],
+   "binding": "imageNamed",
+   "choiceList": {
+   					"In Progress":"inprogress.png",
+   					"Closed":"closed.png"
+   					},
+   					   "assets": {
+  "size": {
+   "width": 50, "height": 50
+		}
+	}
+}
